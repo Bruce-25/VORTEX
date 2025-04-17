@@ -1,0 +1,130 @@
+.vortex-footer {
+    background: linear-gradient(180deg, #0f0f0f, #050505);
+    color: #e0e0e0;
+    padding: 60px 20px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .footer-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #00d4ff;
+    margin-bottom: 12px;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .footer-quote {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInUp 1.6s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .footer-links {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    animation: fadeInUp 2s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    position: relative;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #00d4ff;
+    transition: width 0.3s ease;
+    margin-top: 4px;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  
+  .footer-links a:hover::after {
+    width: 100%;
+  }
+  
+  .footer-copy {
+    font-size: 0.8rem;
+    color: #666;
+    animation: fadeInUp 2.4s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* Floating ambient glow */
+  .vortex-footer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(0, 212, 255, 0.08), transparent 70%);
+    animation: rotateGlow 60s linear infinite;
+    z-index: 1;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    } to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes rotateGlow {
+    0% {
+      transform: rotate(0deg);
+    } 
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .footer-links a {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .footer-links .social-icon {
+    width: 28px;
+    height: 28px;
+    filter: grayscale(100%) brightness(80%);
+    transition: all 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover .social-icon {
+    filter: brightness(120%) saturate(160%) drop-shadow(0 0 4px #00d4ff);
+    transform: scale(1.15);
+  }

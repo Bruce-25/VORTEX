@@ -1,0 +1,126 @@
+body {
+    background-color: #0e0e0e;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+  }
+  
+  .signup-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 20px;
+    opacity: 0;
+    animation: slideIn 0.8s ease-out forwards;
+  }
+  
+  /* Slide-In Animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #121212;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.02); /* Fallback */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px); /* Standard */
+    -webkit-backdrop-filter: blur(12px); /* Safari */
+    color: #e0e0e0;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    padding: 32px;
+  }
+  
+  h3 {
+    color: #00d4ff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    padding: 0 10px;
+  }
+  
+  .form-floating {
+    margin-bottom: 20px;
+  }
+  
+  input.form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    color: #f0f0f0;
+    padding: 14px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  input.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    outline: none;
+    transform: scale(1.02);
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  label {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+  
+  button.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #00d4ff, #0072ff);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+  }
+  
+  button.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+  
+  .text-success, .text-danger {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  .text-info {
+    color: #00d4ff !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+  }
+  
+  .text-info:hover {
+    opacity: 0.8;
+  }
