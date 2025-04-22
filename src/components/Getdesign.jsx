@@ -5,7 +5,7 @@ import Footer from "./Footer.";
 import Carousel from "./Carousel"; // ✅ Carousel imported
 
 
-const Getproducts = () => {
+const Getdesign = () => {
   const [loading, setLoading] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -74,12 +74,7 @@ const Getproducts = () => {
                   {product.product_cost} <span className="text-dark">Kes</span>
                 </b>
                 <br />
-                <button
-                  className="btn btn-outline-info"
-                  onClick={() => navigate("/makepayment", { state: { product } })}
-                >
-                  Buy Now
-                </button>
+                <button className="btn btn-outline-info" onClick={() => navigate("/makepayment",{state : {product}})} > Buy Now</button>
               </div>
             </div>
           </div>
@@ -91,4 +86,4 @@ const Getproducts = () => {
   );
 };
 
-export default Getproducts;
+export default Getdesign;

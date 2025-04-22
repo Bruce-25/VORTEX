@@ -42,6 +42,10 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/aboutus" className="nav-link nav-item-animation">ABOUT US</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/trendjournal" className="nav-link nav-item-animation">BLOG</Link>
+          </li>
+          
         </ul>
 
         {/* Auth Buttons */}

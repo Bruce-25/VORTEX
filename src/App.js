@@ -8,9 +8,10 @@ import Adddesign from './components/Adddesign';
 import Signin from './components/Signin';
 import Signup from './components/Signup';
 import Notfound from './components/Notfound';
-import Navbar from './components/Navbar';
 import Aboutus from './components/Aboutus';
-import Makepayment from './components/Aboutus';
+import Navbar from './components/Navbar';
+import Makepayments from './components/Makepayments';
+import TrendJournal from './components/Trendjournal';
 
 
 function App() {
@@ -28,9 +29,12 @@ function App() {
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/aboutus' element={<Aboutus/>}/>
-        <Route path='/*' element={<Notfound/>}/>
-        <Route path='/makepayment' element={<Makepayment/>}/>
-      </Routes>
+        <Route path='/makepayment' element={<Makepayments/>}/>
+        <Route path='trendjournal' element={<TrendJournal/>}/>
+       <Route path='/*' element={<Notfound/>}/>
+        </Routes>
+
+       
     </div>
     </Router>
   );

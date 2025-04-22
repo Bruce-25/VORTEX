@@ -1,0 +1,67 @@
+.trends-journal {
+    padding: 2rem;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .trends-journal h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #ff007f;
+  }
+  
+  .journal-intro {
+    text-align: center;
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .trend-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .trend-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(255, 0, 127, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .trend-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 127, 0.2);
+  }
+  
+  .trend-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    filter: brightness(90%);
+  }
+  
+  .trend-info {
+    padding: 1rem;
+  }
+  
+  .trend-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #ff90c2;
+  }
+  
+  .trend-meta {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 0.7rem;
+  }
+  
+  .trend-summary {
+    font-size: 1rem;
+    color: #eee;
+  }
