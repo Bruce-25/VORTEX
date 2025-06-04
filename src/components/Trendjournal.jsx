@@ -1,6 +1,6 @@
 import React from 'react';
 import './styling/Trend.css';
-import Footer from './Footer.';
+import Footer from './Footer';
 
 const trendPosts = [
   {
@@ -9,7 +9,7 @@ const trendPosts = [
     category: "Cool",
     date: "April 20, 2025",
     summary: "Urban fits with a futuristic twist. Reflective, oversized, and ice cold.",
-    image: "/images/S1.png"  // Path from /public folder
+    image: "/images/S8.webp"  // Path from /public folder
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const trendPosts = [
     category: "Vintage",
     date: "April 18, 2025",
     summary: "Retro prints, flared jeans, and old-school flair — timeless and trendy.",
-    image: "https://images.unsplash.com/photo-1520975918312-7d14c10efcd4?auto=format&fit=crop&w=800&q=80"
+    image: "images/S5.webp"
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const trendPosts = [
     category: "Sexy",
     date: "April 21, 2025",
     summary: "Silky smooth fits that hug every curve. A night-out essential.",
-    image: "/images/S3.png"
+    image: "/images/S7.webp"
   }
 ];
 

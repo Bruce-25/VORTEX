@@ -1,13 +1,20 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import './styling/Navbar.css'
+import { useState, useEffect } from "react";
+import './styling/Navbar.css';
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [cartCount, setCartCount] = useState(0);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+  useEffect(() => {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const count = cart.reduce((sum, item) => sum + item.qty, 0);
+    setCartCount(count);
+  }, []);
 
   return (
     <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'}`}>
@@ -45,7 +52,12 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/trendjournal" className="nav-link nav-item-animation">BLOG</Link>
           </li>
-          
+          <li className="nav-item">
+            <Link to="/cart" className="nav-link cart-icon-link">
+              🛒
+              {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+            </Link>
+          </li>
         </ul>
 
         {/* Auth Buttons */}

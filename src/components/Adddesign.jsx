@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import './styling/Adddesign.css';
-import Footer from "./Footer.";
+import Footer from "./Footer";
 
 const Addproduct = () => {
   // Initialize the useState hooks to hold data

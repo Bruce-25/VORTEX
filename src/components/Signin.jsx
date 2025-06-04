@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import './styling/Signin.css'; // Assuming you've got the styles in this file
-import Footer from "./Footer.";
+import Footer from "./Footer";
 
 const Signin = () => {
 

@@ -1,0 +1,37 @@
+{
+  "tops": {
+    "hoodie": "Cozy up in our hoodies\u2014where comfort hugs you and style never lets go.",
+    "crop top": "Crop tops designed for bold expression and breezy days. Pair it with confidence.",
+    "t-shirt": "Our t-shirts are classic staples with a modern twist\u2014easygoing and effortlessly cool.",
+    "blouse": "Blouses that blend grace with flair\u2014perfect for work or a night out.",
+    "tank top": "Breathe easy in our tank tops\u2014ideal for layering or soaking up the sun."
+  },
+  "bottoms": {
+    "denim jeans": "Denim jeans never go out of style. Durable, comfy, and perfect for everyday swagger.",
+    "cargo pants": "Function meets flair in our cargo pants. Street style redefined.",
+    "leggings": "Move with confidence in our stretch leggings\u2014versatile, sleek, and oh-so-comfortable.",
+    "shorts": "Keep it cool with our shorts\u2014designed for comfort, crafted for style.",
+    "skirt": "Flow through your day in skirts that speak elegance, edge, or ease\u2014your pick."
+  },
+  "shoes": {
+    "sneakers": "Step up your game with our sneakers\u2014where comfort meets undeniable drip.",
+    "heels": "Heels that turn sidewalks into runways. Elevate your look with poise and power.",
+    "boots": "Tread with attitude. Our boots are built for boldness and unmatched style.",
+    "sandals": "Chic, breathable, and ready for sunshine\u2014our sandals keep you grounded in fashion.",
+    "loafers": "Loafers that walk the line between comfort and class\u2014perfect for any vibe."
+  },
+  "accessories": {
+    "watches": "Watches that do more than tell time\u2014they tell your story.",
+    "sunglasses": "Sunglasses with attitude. Protect your eyes, boost your confidence, and flex your vibe.",
+    "beanie": "Keep warm and cool\u2014literally\u2014with our beanies crafted for any fit.",
+    "scarf": "Wrap yourself in soft sophistication with our versatile scarves.",
+    "belt": "Define your waist, complete the fit\u2014our belts bring structure and shine."
+  },
+  "outerwear": {
+    "leather jacket": "Our leather jackets are made for bold souls\u2014luxurious, edgy, and timeless.",
+    "denim jacket": "Layer up in style with denim jackets that never go out of trend.",
+    "blazer": "Blazers that command attention\u2014smart, tailored, and oh-so-stylish.",
+    "windbreaker": "Our windbreakers mix sport and street\u2014lightweight protection with heavy style.",
+    "trench coat": "Trench coats that whisper elegance\u2014flowing lines, classic vibes."
+  }
+}
